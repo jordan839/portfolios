@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: boldonse;
+    src: url(./font/WinkyRough-Regular.ttf);
+}
+
+:root{
+--font:boldonse;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body {
+    background-color: #f3f2f0cc  ;
+    color: #332c2c;
+    text-align: center;
+}
+
+
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgba(25, 92, 135, 0.9);
+
+}
+h1{
+    color: aliceblue;
+}
+#date-time{
+    color: aliceblue;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section (concerne la nav et hero) */
+#hero {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(image\ portfolio.jpg) center/cover no-repeat; */
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(25, 92, 135, 0.9);
+
+}
+#hero .container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#hero  p{
+    color: aliceblue;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+#hero h2::before {
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+   text-decoration: none;
+   width: 630px;
+   height: 3px;
+   background: white;
+   position: absolute;
+   transform: translateY(50px) ;
+}
+#hero h2{
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+/*******************/
+#about2{
+  
+    background: rgba(25, 92, 135, 0.9);
+    color: white;
+    margin: 0px;
+    width: 100%;
+}
+.container h2{
+    font-family: var(--font);
+}
+.btn-hero{
+    display: inline-block;
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 230px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+#about, h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color:  #195c87;
+    text-align: start;
+    
+}
+#about p{
+    color: #2a2a2a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+h2::before{
+    content: "";
+    width: 50px;
+    height: 3px;
+    text-decoration: none;
+    background: #195c87;
+    position: absolute;
+    transform: translateY(40px) ;
+}
+h2{
+    font-size: 2.5rem;
+    color: #195c87;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.disposition{
+    display: flex;
+    align-items: center;
+}
+.photo{
+   margin-right: 100px;
+}
+
+.btn-telechargement{
+    display: inline-block;
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.definition p{
+    color: white;
+    text-align: left;
+}
+.definition h2{
+    color: white;
+    text-align: center;
+}
+.definition ul{
+    text-align: left;
+}
+.definition{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.bts {
+    display: flex;               /* Active le mode flex */
+    justify-content: space-between; /* Sépare les deux blocs SLAM / SISR */
+    gap: 40px;                   /* Espace entre les deux colonnes */
+    padding: 20px;
+    flex-wrap: wrap;             /* Permet d’empiler en colonne sur petit écran */
+  }
+  
+  .bts .bloc {
+    flex: 1;                     /* Chaque bloc prend autant de place que possible */
+    min-width: 300px;            /* Largeur minimale pour ne pas casser le contenu */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+
+
+/* conerce le parcours */
+.parcours{
+    display: flex;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Animation spécifique pour le texte dans les sections h2 */
+section h2 {
+    animation: bounceText 3s ease-in-out infinite;
+}
+
+@keyframes bounceText {
+    /* 0% : C'est l'état initial de l'animation, au début. À 0%, l'élément est à sa position d'origine, donc il ne bouge pas : */
+    0% {
+        transform: translateY(0);
+    }
+    /* 50% : C'est l'état au milieu de l'animation, après 1,5 seconde (puisque l'animation dure 3 secondes au total). À 50%, l'élément se déplace vers le haut de 10px : */
+    50% {
+        transform: translateY(-10px);
+    }
+    /* Cela crée l'effet de "rebond", car l'élément se déplace vers le haut.
+
+100% : C'est l'état final de l'animation. À 100%, l'élément revient à sa position d'origine */
+    100% {
+        transform: translateY(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Espacement entre les sections */
+section {
+    padding: 60px 20px;
+}
+
+
+
+
+/* partie contact */
+.contact{
+    margin: 20px;
+}
+.contact p{
+    margin-bottom: 30px;
+}
+.containcontact{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+.localisation{
+margin-right: 25px;
+padding-right: 200px;
+padding-left: 200px;
+padding-bottom: 50px;
+padding-top: 50px;
+color: rgba(25, 92, 135, 0.9);
+box-shadow: 0 0 30px rgba(70, 71, 71, 0.6);
+}
+
+
+.adresssemail{
+ margin-right: 25px;
+ text-align: center;
+ color: rgba(25, 92, 135, 0.9);
+ box-shadow: 0 0 30px rgba(70, 71, 71, 0.6);
+
+}
+
+
+.numerotel{
+    text-align: center;
+    color: rgba(25, 92, 135, 0.9);
+   box-shadow: 0 0 30px rgba(70, 71, 71, 0.6);
+
+}
+
+
+.formulaire{
+    display: flex;
+  
+    flex-direction: row-reverse;
+    margin: 0px;
+
+}
+ .contact , form{
+ 
+    border: none;
+    border-radius: 5px;
+    margin-right: 240px;
+}
+.contact form{
+    padding: 10px;
+    background: rgba(208, 226, 237, 0.9);
+    box-shadow: 0 0 30px rgba(70, 71, 71, 0.6);
+}
+.maps{
+    margin-left: 50px;
+    width: 100%;
+    padding: 15px;
+}
+/* pour la veille  */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+  }
+  
+  .veille {
+    background: linear-gradient(135deg, #195c87, #1e3c72);
+    padding: 60px 20px;
+    color: white;
+  }
+  
+  .veille h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    color: white;
+  }
+  .veille h2::before {
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+   text-decoration: none;
+   width: 65px;
+   height: 3px;
+   background: white;
+   position: absolute;
+   transform: translateY(50px) ;
+}
+  
+  
+  
+  .containveille {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .veille-box {
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .veille-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .monLien {
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #195c87;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .monLien i {
+    margin-right: 10px;
+  }
+  
+  .monParagraphe {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .veille h2 {
+      font-size: 2rem;
+    }
+  
+    .veille-box {
+      padding: 20px;
+    }
+  }
+  
+/****************/
+.adresssemail h4{
+    padding-top: 45px;
+}
+.numerotel{
+    padding-top: 45px; 
+}
+
+footer {
+    padding: 0px;
+    background: rgba(25, 92, 135, 0.9);
+}
+footer p{
+    color: white;
+}
+footer h3{
+color: white;
+font-size: 2rem;
+}
+.footercontain2 p{
+    text-align:start ;
+}
+.footercontain2{
+    padding: 15px;
+}
+.stage h2{
+     text-align: center;
+}
+/* PARCOURS */
+#parcours {
+    padding: 60px 20px;
+    background-color: #f3f2f0cc;
+    text-align: center;
+}
+
+#parcours h2::before {
+    font-size: 2.5rem;
+    color: rgba(25, 92, 135, 0.9);
+    text-align: center;
+   text-decoration: none;
+   width: 50px;
+   height: 3px;
+   position: absolute;
+   transform: translateY(50px) ;
+}
+#parcours h2{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+/* Conteneur principal */
+.parcours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Carte individuelle */
+.parcours-card {
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    /* Animation d’apparition */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.parcours-card:nth-child(1) { animation-delay: 0.2s; }
+.parcours-card:nth-child(2) { animation-delay: 0.4s; }
+.parcours-card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Effet au survol */
+.parcours-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenu des cartes */
+.parcours-card h3 {
+    font-size: 1.4rem;
+    color: #195c87;
+    margin-bottom: 10px;
+}
+
+.parcours-card .lieu,
+.parcours-card .date {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.parcours-card .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2a2a2a;
+}
+.inner3 {
+    padding: 40px; /* Ajoute de l'espace intérieur autour du contenu */
+    background: #e0e0e0; /* Couleur de fond gris clair (typique Neumorphism) */
+    display: flex; /* Utilise Flexbox pour l'alignement */
+    justify-content: center; /* Centre horizontalement le contenu */
+  }
+  
+  /* ===== Conteneur interne qui regroupe toutes les compétences ===== */
+  .container3 {
+    width: 100%;                 /* Prend toute la largeur disponible du parent */
+    max-width: 800px;            /* Limite la largeur à 800px pour rester lisible */
+    display: grid;               /* Utilise CSS Grid pour organiser les éléments en grille */
+    grid-template-columns: repeat(2, 1fr); 
+    /* Crée 2 colonnes de taille égale (1fr = 1 fraction de l’espace disponible) */
+  
+    gap: 30px;                   /* Ajoute un espace de 30px entre les colonnes ET les lignes */
+  }
+  
+  
+  /* ===== Titre de chaque compétence (HTML5, CSS3, etc.) ===== */
+  .skill-name {
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 5px; /* Petit espace sous le nom */
+    font-family: sans-serif; /* Police propre et moderne */
+    font-size: 1.1rem; /* Taille de police légèrement augmentée */
+    color: #333; /* Gris foncé pour un bon contraste */
+  }
+  
+  /* ===== Conteneur de la barre de compétence en style Neumorphism ===== */
+  .skill-bar {
+    height: 20px; /* Hauteur de la barre */
+    border-radius: 20px; /* Coins arrondis pour un look doux */
+    background: #e0e0e0; /* Même fond que la section pour un effet intégré */
+    
+    /* Ombres internes qui donnent un effet "creux" */
+    box-shadow: 
+      inset 6px 6px 10px #bebebe, /* Ombre interne sombre en bas à droite */
+      inset -6px -6px 10px #ffffff; /* Ombre interne claire en haut à gauche */
+  
+    overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
+  }
+  
+  /* ===== Partie intérieure de la barre (la progression visible) ===== */
+  .skill-progress {
+    height: 100%; /* Prend toute la hauteur de la barre */
+    
+    /* Dégradé de couleur de gauche à droite (orange à rouge) */
+    background: linear-gradient(90deg, #ff9800, #f44336);
+  
+    border-radius: 20px; /* Pour suivre la courbure de la barre */
+    
+    /* Animation de remplissage de la barre */
+    animation: fillProgress 2s ease forwards;
+  }
+
+  
+  /* ===== Animation CSS de la barre ===== */
+  @keyframes fillProgress {
+    from {
+      width: 0; /* Démarre vide */
+    }
+    to {
+      /* width sera défini en ligne dans le HTML */
+      /* Par exemple: style="width: 70%;" */
+    }
+  }
+  .skill-percent {
+    text-align: right;         /* Aligne le pourcentage à droite */
+    font-size: 0.9rem;         /* Taille du texte un peu réduite */
+    font-weight: 500;          /* Texte un peu plus marqué */
+    color: #444;               /* Couleur foncée pour la lisibilité */
+    margin-top: 5px;           /* Petit espace au-dessus du texte */
+  }
+  .inner .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img img {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.img img:hover {
+    transform: scale(1.2);
+}
+/*projets*/
+.projets-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .projets-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .filtres {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .filtre-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .filtre-btn.actif,
+  .filtre-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .grille-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .carte-projet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .carte-projet:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carte-projet h3 {
+    margin-top: 0;
+  }
+  
+  .carte-projet .date {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9em;
+  }
+  .carte-projet {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  
