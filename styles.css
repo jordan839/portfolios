@@ -4,7 +4,149 @@
     font-family: boldonse;
     src: url(./font/WinkyRough-Regular.ttf);
 }
+/* Responsive Design - Tablettes */
+@media (max-width: 768px) {
 
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    #hero {
+      height: auto;
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    #hero .container {
+      margin: 0;
+    }
+  
+    #hero p {
+      margin: 20px;
+    }
+  
+    .disposition {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn, .btn-hero {
+      margin-left: 0;
+    }
+  
+    .contact {
+      margin: 10px;
+    }
+  
+    .containcontact {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .localisation,
+    .adresssemail,
+    .numerotel {
+      padding: 30px 20px;
+      margin: 15px 0;
+      width: 90%;
+    }
+  
+    .formulaire {
+      flex-direction: column;
+      margin-right: 0;
+      align-items: center;
+    }
+  
+    .contact form {
+      margin: 20px 0;
+      width: 90%;
+    }
+  
+    .maps {
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .container2,
+    .inner .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bts {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .container3 {
+      grid-template-columns: 1fr;
+    }
+  
+    .projets-section {
+      padding: 40px 10px;
+    }
+  
+    .grille-projets {
+      grid-template-columns: 1fr;
+    }
+  
+    .parcours-card {
+      margin: 0 10px;
+    }
+  }
+  
+  /* Responsive Design - Mobiles */
+  @media (max-width: 480px) {
+  
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+  
+    #hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .btn,
+    .btn-hero {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .photo {
+      margin: 0;
+    }
+  
+    .parcours-card {
+      padding: 20px;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  
+    .veille-box {
+      padding: 20px;
+    }
+  
+    .monLien {
+      font-size: 1rem;
+    }
+  
+    .footercontain2 {
+      text-align: center;
+    }
+  }
 :root{
 --font:boldonse;
 }
